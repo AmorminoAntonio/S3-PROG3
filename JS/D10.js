@@ -369,8 +369,8 @@ console.log(onlyInLastMillennium(movies))
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
-const sumAllTheYears = (array) => {
-  return array.reduce((acc, curr) => acc + parseInt(curr.Year), 0)
+const sumAllTheYears = () => {
+  return movies.reduce((acc, curr) => acc + parseInt(curr.Year), 0)
 }
 console.log(sumAllTheYears(movies))
 
@@ -378,15 +378,23 @@ console.log(sumAllTheYears(movies))
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+searchByTitle = (Title) => {
+  return movies.filter(movies => movies.Title.includes(Title))
+}
+console.log(searchByTitle("Lord"))
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+
+
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -394,9 +402,16 @@ console.log(sumAllTheYears(movies))
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+const Baldur = () => {
+  const container = document.getElementById(container)
+}
+
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+
+
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
