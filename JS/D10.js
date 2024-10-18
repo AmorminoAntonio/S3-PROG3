@@ -402,24 +402,34 @@ console.log(searchByTitle("Lord"))
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-const Baldur = () => {
-  const container = document.getElementById(container)
-}
-
+const trovaContainer = function () {
+  const div = document.getElementById("container");
+  return div;
+};
+console.log(trovaContainer());
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 
+const selectionTd = () => {
+  const allTd = document.querySelectorAll("td");
+  return allTd;
+};
+console.log(selectionTd());
 
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+
+
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
